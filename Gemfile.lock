@@ -24,7 +24,7 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     connection_pool (2.2.0)
-    crashbreak (1.0.15)
+    crashbreak (1.0.16)
       aws-sdk (~> 2)
       faraday
       octokit
@@ -33,6 +33,7 @@ GEM
       sidekiq
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
+    diff-lcs (1.2.5)
     equalizer (0.0.11)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
@@ -66,10 +67,25 @@ GEM
       rack (>= 0.4)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
+    rack-test (0.6.3)
+      rack (>= 1.0)
     redis (3.2.1)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
     request_store (1.2.0)
+    rspec (3.3.0)
+      rspec-core (~> 3.3.0)
+      rspec-expectations (~> 3.3.0)
+      rspec-mocks (~> 3.3.0)
+    rspec-core (3.3.2)
+      rspec-support (~> 3.3.0)
+    rspec-expectations (3.3.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.3.0)
+    rspec-mocks (3.3.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.3.0)
+    rspec-support (3.3.0)
     sawyer (0.6.0)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
@@ -97,6 +113,8 @@ DEPENDENCIES
   crashbreak
   grape
   pg
+  rack-test (~> 0.6.3)
+  rspec (~> 3.2)
 
 BUNDLED WITH
    1.10.6
