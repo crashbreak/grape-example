@@ -1,5 +1,4 @@
-Bundler.require(:default, ENV['RACK_ENV'] || :development)
-require File.expand_path('../api', __FILE__)
+require File.expand_path('../application', __FILE__)
 
 use Crashbreak::ExceptionCatcherMiddleware
 run API

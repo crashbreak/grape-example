@@ -3,7 +3,7 @@ class API < Grape::API
 
   resource :projects do
     get do
-      'Hello World!'
+      'Hello World!'.undefined_method
     end
   end
 end
