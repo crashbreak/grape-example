@@ -3,7 +3,7 @@ PROJECT_ROOT = File.expand_path '..', __FILE__
 Crashbreak.configure do |config|
   config.api_key = ENV['CRASHBREAK_TOKEN']
 
-  config.error_serializers = [Crashbreak::DefaultSummaryFormatter.new, Crashbreak::EnvironmentVariablesFormatter.new]
+  config.error_serializers = [Crashbreak::DefaultSummarySerializer.new, Crashbreak::EnvironmentVariablesSerializer.new]
 
   config.dumpers = [Crashbreak::RequestDumper.new]
 
